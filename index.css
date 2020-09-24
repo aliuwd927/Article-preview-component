@@ -1,0 +1,297 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    min-height: 100vh;
+    font-family: 'Manrope', sans-serif !important;
+    font-size: 13px;
+    background-color: hsl(210, 46%, 95%);
+}
+
+.container{
+    max-width: 1440px;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.main-content{
+    max-width: 975px;
+    width: 100%;
+    height: 40%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    border-radius: 10px;
+    background-color: white;
+}
+
+.left_container{
+    max-width: 355px;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px 0 0 10px;
+    background-image: url(/images/drawers.jpg);
+    background-size: cover;
+}
+
+.right_container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+
+.right_content{
+    width: 90%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin-left: 40px;
+}
+
+.header{
+    width: 90%; 
+}
+.header_text{
+    font-size: 2rem;
+    font-weight: 700;
+    color: hsl(217, 19%, 35%);
+}
+.description{
+    width: 90%;   
+}
+
+.description_text{
+    font-size: 1.2rem;
+    color: hsl(217, 19%, 35%)
+}
+
+.bottom_container{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.img_name_date_container{
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+}
+
+.img_Container_L{
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.profile_img{
+    width: 100%;
+    border-radius: 100px;
+}
+
+.name_date_Container_R{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 15px;
+}
+
+.name{
+    width: 100%;
+}
+
+.d_m_y{
+    width: 100%;
+}
+
+.share_button{
+    width: 40px;
+    height: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: 70%;
+    top: 22%;
+    border-radius: 30px;
+}
+
+.share_container{
+    width: 50%;
+    position: relative;
+}
+
+.socials_container{
+    width: 350px;
+    height: 75px;
+    left: 15%;
+    bottom: 155%;
+    background-color: hsl(217, 19%, 35%);
+    z-index: 1;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+}
+
+.triangle_down{
+    width: 0;
+    height: 0;
+    left: 71%;
+    bottom: 120%;
+    position: absolute;
+    z-index: 1;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-top: 20px solid hsl(217, 19%, 35%);
+}
+
+.share_container .socials_container, .share_container .triangle_down{
+    visibility: hidden;
+}
+
+
+.share_container .show{
+    visibility: visible;
+}
+
+.facebook_icon, .twitter_icon, .pintrest_icon{
+    margin: 10px;
+}
+
+.share_text{
+    margin-left: 48px;
+}
+
+.icon_container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: 15px;       
+}
+
+.share_text > h4 {
+    color: hsl(212, 23%, 69%);
+}
+
+@media screen and (max-width: 1000px){
+    .container{
+        max-width: 375px;
+        width: 100%;
+        height: 100vh;
+        margin: 0 auto;
+    }
+
+    .main-content{
+        max-width: 375px;
+        width: 100%;
+        height: 620px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+    }
+
+    .left_container{
+        max-width: 375px;
+        width: 100%;
+        height: 39.5%;
+        top: 0;
+        border-radius: 10px 10px 0 0;
+        position: absolute;
+    }
+
+    .right_container{
+        margin-top: 250px;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-end;
+        overflow: hidden;
+    }
+
+    .right_content{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .header{
+        width: 85%;
+    }
+
+    .header_text{
+       font-size: 1.2rem;
+       font-weight: 700;
+    }
+
+    .description{
+        margin-top: 20px;
+        width: 86%;
+    }
+
+    .description_text{
+        font-size: 0.97rem;
+        font-weight: 400;
+    }
+
+    .bottom_container{
+        margin-top: 40px;
+        width: 84%;
+    }
+
+    .img_name_date_container{
+        width: 100%;
+        margin-top: 15%;
+    }
+
+    .share_container{
+        position: relative;
+        right: 77%;
+        top: 155%;
+    }
+    .socials_container{
+       position: absolute;
+
+     
+   }
+
+   .share_button{
+       position: absolute;
+       z-index: 2;
+       left: 300%;
+       top:-100%;
+   }
+    
+    .triangle_down{
+        display: none;
+    }
+
+    .share_container .socials_container, .share_container .triangle_down .hidden{
+        visibility: hidden;
+    }
+    .share_container .show{
+        visibility: visible;
+    }
+   
+}
